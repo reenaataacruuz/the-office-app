@@ -1,0 +1,73 @@
+@import url("/css/style.css");
+
+section#characters {
+  padding: 40px;
+  background-color: var(--cor-fundo-alternativo);
+}
+
+#characters h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--cor-principal);
+  font-weight: bold;
+}
+
+.charactersContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.background {
+  background-color: var(--cor-secundaria);
+  height: 80px;
+  padding: 20px 10px;
+  border-radius: 7px;
+}
+
+.nameCharacter {
+  color: var(--cor-dwight-escuro);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.actorCharacter {
+  font-size: 0.6rem;
+}
+
+.cardCharacter {
+  font-size: 0.85rem;
+  margin-top: 5px;
+  border-color: var(--cor-texto-secundario);
+  border-width: 0.4px;
+  border-radius: 7px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 1);
+}
+
+.jobCharacter,
+.workplaceCharacter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.jobCharacter p,
+.workplaceCharacter p {
+  max-width: 190px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+  font-weight: 600;
+}
+
+.workplaceCharacter span,
+.jobCharacter span {
+  color: #666;
+  font-weight: 400;
+}

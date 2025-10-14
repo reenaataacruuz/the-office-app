@@ -1,0 +1,66 @@
+@import url("/css/style.css");
+
+section#episodes {
+  padding: 40px;
+  background-color: var(--cor-fundo-alternativo-escura);
+}
+
+#episodes h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--cor-principal);
+  font-weight: bold;
+}
+
+.episodesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cardEpisode {
+  font-size: 0.85rem;
+  margin-top: 5px;
+  border-color: var(--cor-texto-secundario);
+  border-width: 0.4px;
+  border-radius: 7px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 1);
+}
+
+.seasonEpisode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardEpisode h3 {
+  color: var(--cor-dwight-escuro);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.background-episode {
+  background-color: var(--cor-fundo-alternativo);
+  height: 80px;
+  width: auto;
+  padding: 20px 10px;
+  border-radius: 7px;
+}
+
+.summary {
+  padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  color: #333;
+  font-weight: 600;
+  text-align: justify;
+  max-height: 130px;
+}
