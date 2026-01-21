@@ -53,7 +53,7 @@ section#episodes {
 }
 
 .summary {
-  padding: 10px;
+  padding: 10px 10px 0;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
